@@ -5,7 +5,7 @@ function createData(obj) {
     return {
        
         set: function(key, value){
-            if(key && value){
+            if(key !== undefined && value !== undefined){
                 data[key] = value;
             };
         },
